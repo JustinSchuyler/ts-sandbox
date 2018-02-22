@@ -1,0 +1,16 @@
+{
+  "name": "ts-sandbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "ts-loader": "^3.5.0",
+    "typescript": "^2.7.2",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}
