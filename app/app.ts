@@ -4,11 +4,13 @@ import { DenominationValues } from './interfaces/denomination-values.interface';
 
 const total: number = 3189;
 const coins: DenominationValues = {
-    low: 4,
+    high: 7,
     mid: 5,
-    high: 7
+    low: 4
 };
 
-let result = calculateDenominationCombination(coins, total);
-console.log('total:', total);
-console.log('result:', result);
+let results = calculateDenominationCombination(coins, total);
+console.log(`To add up to $${total}, you will need...`);
+console.log(` ${results.high.count} coins worth $${results.high.value}`);
+console.log(` ${results.mid.count} coins worth $${results.mid.value}`);
+console.log(` ${results.low.count} coins worth $${results.low.value}`);

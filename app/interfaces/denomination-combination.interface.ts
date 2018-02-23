@@ -1,5 +1,5 @@
 export interface DenominationCombination {
-    lowCoinCount: number;
-    midCoinCount: number;
-    highCoinCount: number;
+    high: { value: number, count: number };
+    mid: { value: number, count: number };
+    low: { value: number, count: number };
 }
